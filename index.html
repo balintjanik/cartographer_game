@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>The map-maker</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Potato map</h1>
+        <table id="seasons">
+            <tr>
+                <td id="springP">Spring: <br><span id="spring">0 score</span></td>
+                <td id="summerP">Summer: <br><span id="summer">0 score</span></td>
+                <td id="autumnP">Autumn: <br><span id="autumn">0 score</span></td>
+                <td id="winterP">Winter: <br><span id="winter">0 score</span></td>
+                <td id="overallP">Overall: <br><span id="overall">0 score</span></td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <table id="gameTable">
+        </table>
+        <div id="side">
+            <p class="sideP">Current season: <span id="curSeason">Spring</span></p>
+            <table id="missions">
+                <tr>
+                    <td>
+                        <p class="title" id="ATitle">Mission</p>
+                        <p class="description" id="ADesc">The description is something kjdgfskjdnlfa iwgduf wdf fw vhw difwf</p>
+                        <p class="score" id="AScore">Spring: 0 - Winter: 0 - Overall: 0</p>
+                    </td>
+                    <td>
+                        <p class="title" id="BTitle">Mission</p>
+                        <p class="description" id="BDesc">The description is something kjdgfskjdnlfa iwgduf wdf fw vhw difwf</p>
+                        <p class="score" id="BScore">Spring: 0 - Summer: 0 - Overall: 0</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="title" id="CTitle">Mission</p>
+                        <p class="description" id="CDesc">The description is something kjdgfskjdnlfa iwgduf wdf fw vhw difwf</p>
+                        <p class="score" id="CScore">Summer: 0 - Autumn: 0 - Overall: 0</p>
+                    </td>
+                    <td>
+                        <p class="title" id="DTitle">Mission</p>
+                        <p class="description" id="DDesc">The description is something kjdgfskjdnlfa iwgduf wdf fw vhw difwf</p>
+                        <p class="score" id="DScore">Autumn: 0 - Winter: 0 - Overall: 0</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="sideP">Time left of season: <span id="timeLeft">7/7</span></p>
+            <div id="nextItemD">
+                <p>Next item:</p>
+                <table id="nextItemTable">
+                    <caption id="nextItemTimeP">Required time: 0</caption>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <div class="btnContainer">
+                    <button class="btn" id="rotateBtn">Rotate</button>
+                    <button class="btn" id="mirrorBtn">Mirror</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 id="htitle">Help</h2>
+        <p class="htext">Next to Dontsearchcountry lies a huge country, the Potato Empire, many parts of which are still unknown and uninhabited to this day. Its ruler, Empress Pityóka, ordered the mapping and population of these areas. As a first step, she commissioned you as an imperial cartographer to explore the landscape. The empress uses quests to determine what kind of landscapes she wants to see in her empire. Help her fulfill her wishes as best as possible, so your reputation can grow accordingly!</p>
+        <p class="htext">In this one-player game, you have to place map elements of different shapes and types of terrain on an 11x11 square grid map (there are 5 fix mountain fields). Each item has a time value (1 or 2), the game consists of 28 time units. At the end of the game (or during) you get points for missions based on the current state of the square grid, and the final score is based on this.</p>
+        <p class="htext">The terrain types of the map elements that can be placed can be the following: forest, village, farm and water. The map elements to be placed are randomly chosen. We can rotate and mirror all map elements, and the map element cannot cover an already full field (the mountain also counts), nor can any part of it hang from the map.</p>
+        <p class="htext">At the beginning of each game, you get 4 random mission cards (A,B,C,D), based on which you can get points. If you surround the mountains from 4 sides, you get 1 point for each surrounded mountain.</p>
+        <p class="htext">The 28 time units represent one year. This can be broken down into 4 seasons, each season lasting up to 7 time units. If the cumulative time value reaches or exceeds a multiple of 7 while dragging map elements, the season ends. At the end of each season, we can get points for 2 mission cards. At the end of spring we can earn points for A-B missions, at the end of summer for B-C missions, at the end of autumn for C-D missions, and at the end of winter for D-A missions. For each of the four missions, you must indicate how many points you got for each season!</p>
+        <p class="htext">At the end of the game, our scores during the four seasons are added together and will give us our final score.</p>
+        <table id="help">
+            <caption>Icons</caption>
+            <tr>
+                <td id="m"><img src="img/mountain.png"><p>Mountains</p></td>
+                <td id="w"><img src="img/woods.png"><p>Woods</p></td>
+                <td id="v"><img src="img/village.png"><p>Village</p></td>
+                <td id="f"><img src="img/farm.png"><p>Farm</p></td>
+                <td id="W"><img src="img/water.png"><p>Water</p></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
